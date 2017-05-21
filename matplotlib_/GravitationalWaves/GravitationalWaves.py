@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 E.g of drawing Gravitational Waves with SciPy/numpy/matplotlib
-@author CQK. 2017.05.21 referenced from -*mooc*-
+@author CQK. 2017.05.21 referenced from `mooc`
 """
 import matplotlib.pyplot as plt
 import numpy
