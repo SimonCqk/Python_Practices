@@ -1,5 +1,7 @@
-import numpy
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 import matplotlib.pyplot as plt
+import numpy
 
 numpy.random.seed(0)
 avg, sigma = 100, 20  # 均值 标准差

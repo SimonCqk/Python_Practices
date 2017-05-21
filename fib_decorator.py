@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-
 """
 @version of decorator to boost fibonacci function
 """
