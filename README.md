@@ -6,4 +6,4 @@
 [matplotlib_](matplotlib_)  :Simple e.gs of using `matplotlib` to make datas visualized .<br>
 
 
-#### Continue to UPADATE.
+#### Continue to UPDATE.
