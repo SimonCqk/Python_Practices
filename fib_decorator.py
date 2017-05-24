@@ -6,16 +6,33 @@
 import time
 
 
-def fib_decorator(func):
+def decorator(func):
 	cache = dict()
 
 	def wrap(*args):
-		return cache.setdefault(args, func(*args))
+		for arg in args:
+			return cache.setdefault(arg, func(arg))
 
 	return wrap
 
 
-@fib_decorator
+@decorator
+def fibonacci(n: int) -> int:
+
+	if n == 0 or n == 1:
+		return 1
+	else:
+		return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+start = time.clock()
+print(fibonacci(10))
+end = time.clock()
+print("Running time:{}s".format(end - start))
+
+"""
+No-Recursive version:
+
 def fibonacci(*n):
 	for item in n:
 		a, b = 0, 1
@@ -23,11 +40,4 @@ def fibonacci(*n):
 			print(a, end=' ')
 			a, b = b, a + b
 		print()
-
-
-# Test .
-
-start = time.clock()
-fib_decorator(10000)
-end = time.clock()
-print("Running time:{}s".format(end-start))
+"""
