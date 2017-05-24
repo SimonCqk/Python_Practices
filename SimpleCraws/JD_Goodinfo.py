@@ -29,25 +29,23 @@ def parsePage(ilt, html):
 
 def printGoodsList(ilt):
 	tplt = "{:4}\t{:8}\t{:16}"
-	print(tplt.format("Number", "Price", "Name of Good"))
-	count = 0
-	for g in ilt:
-		count = count + 1
-		print(tplt.format(count, g[0], g[1]))
+	print(tplt.format("Number", "Price", "Company"))
+	for index,g in enumerate(ilt, start=0):
+		print(tplt.format(index, g[0], g[1]))
 
 
 def saveData(filename: str, ilt):
-	file = open(filename, 'w',encoding='utf-8')
+	file = open(filename, 'w', encoding='utf-8')
 	tplt = "{:4}\t{:8}\t{:16}"
 	print(tplt.format("Number", "Price", "Name of Good"), file=file)
 	count = 0
 	for item in ilt:
-		print(tplt.format(count, item[0], item[1]),file=file)
+		print(tplt.format(count, item[0], item[1]), file=file)
 	file.close()
 
 
 def main():
-	goods = 'Python'
+	goods = '手机'
 	depth = 10
 	url = 'https://search.jd.com/Search?keyword=' + goods + '&enc=utf-8'  # https://s.taobao.com/search?q=
 	infoList = list()
