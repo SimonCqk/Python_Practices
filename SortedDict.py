@@ -37,11 +37,12 @@ False
 >>> str(d)
 "{'E': 2, 'I': 3, 'N': 4, 'S': 5, 'V': 1}"
 """
+import collections
 
 import SortedList
 
 
-class SortedDict(dict):
+class SortedDict(collections.Mapping):
 	def __init__(self, dictionary=None, key=None, **kwargs):
 		"""Initializes with a shallow copy of the given dictionary
 		and/or with keyword key=value pairs and preserving order using

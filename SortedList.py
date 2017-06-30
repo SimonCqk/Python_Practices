@@ -34,11 +34,12 @@ AttributeError: 'SortedList' object has no attribute 'sort'
 >>> isinstance(L, collections.Sequence)
 False
 """
+import collections
 
 _identity = lambda x: x
 
 
-class SortedList:
+class SortedList(collections.Sequence):
 	def __init__(self, sequence=None, key=None):
 		self.__key = key or _identity
 		assert hasattr(self.__key, "__call__")

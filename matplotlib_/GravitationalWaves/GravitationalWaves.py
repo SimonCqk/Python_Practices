@@ -9,7 +9,7 @@ import numpy
 from scipy.io import wavfile
 
 # Generate time series from docs
-rate_h, hstrain = wavfile.read(r"matplotlib_/H1_Strain.wav", 'rb')
+rate_h, hstrain = wavfile.read(r"matplotlib_/H1_Strain.wav", 'rb')  # return the `rate` and `data`
 rate_l, lstrain = wavfile.read(r"matplotlib_/L1_Strain.wav", 'rb')
 reftime, ref_H1 = numpy.genfromtxt("matplotlib_/GW150914_4_NR_waveform_template.txt").transpose()
 # Read the strain sequence
