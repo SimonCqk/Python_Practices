@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+import re
+
 import requests
 from bs4 import BeautifulSoup
-import traceback
-import re
 
 
 def getHTMLText(url, encode="utf-8") -> str:

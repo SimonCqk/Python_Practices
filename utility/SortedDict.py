@@ -39,7 +39,7 @@ False
 """
 import collections
 
-import SortedList
+from utility import SortedList
 
 
 class SortedDict(collections.Mapping):
