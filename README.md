@@ -4,6 +4,7 @@
 
 [MainPage](https://github.com/SimonCqk/Python_Practices) :Some unclassified source code .<br>
 [matplotlib_](matplotlib_)  :Simple e.gs of using `matplotlib` to make datas visualized .<br>
-
+[simpel_craws](simple_craws)  :Simple web craw practices .<br>
+[utility](utility)  :Some practical classes may be useful .<br>
 
 #### Continue to UPDATE.
