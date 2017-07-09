@@ -27,7 +27,7 @@ def quick_pow_mat(mat, n):
 	:param n: the exponent
 	:return:the calculated matrix
 	'''
-	assert (mat.shape)[0] == (mat.shape)[1] and n is not 0, "Invalid input data ."
+	assert (mat.shape)[0] == (mat.shape)[1] and n is not 0, "Invalid input data , plz check the params ."
 	ans = np.eye((mat.shape)[0])
 	while n:
 		if n & 1:
@@ -35,3 +35,4 @@ def quick_pow_mat(mat, n):
 		n = int(n >> 1)
 		mat = np.multiply(mat, mat)
 	return ans
+
