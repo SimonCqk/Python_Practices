@@ -1,5 +1,5 @@
-import numpy
 import matplotlib.pyplot as plt
+import numpy
 
 N = 20
 theta = numpy.linspace(0.0, 2 * numpy.pi, N, endpoint=False)
