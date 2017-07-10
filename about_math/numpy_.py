@@ -35,4 +35,3 @@ def quick_pow_mat(mat, n):
 		n = int(n >> 1)
 		mat = np.multiply(mat, mat)
 	return ans
-
