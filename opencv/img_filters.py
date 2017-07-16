@@ -3,9 +3,9 @@
 import cv2
 import numpy as np
 
-fn = "for_test.jpg"
-myimg = cv2.imread(fn)
-img = cv2.cvtColor(myimg, cv2.COLOR_BGR2GRAY)
+fn = "images/for_test.jpg"
+src_img = cv2.imread(fn)
+img = cv2.cvtColor(src_img, cv2.COLOR_BGR2GRAY)
 
 # add spiced salt noise
 
