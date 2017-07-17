@@ -12,3 +12,5 @@ cv2.drawContours(img, contours, -1, (0, 0, 255), 3)
 cv2.imshow("Result", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+dict.pop()
