@@ -20,7 +20,7 @@ def quick_pow(a: int, n: int) -> int:
 	return ans
 
 
-# quick powder of matrix
+# quick power of matrix
 def quick_pow_mat(mat, n):
 	'''
 	:param mat: the input matrix
