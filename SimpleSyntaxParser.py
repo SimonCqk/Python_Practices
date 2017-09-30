@@ -108,6 +108,7 @@ def descent_parser():
 	print(e.parse('2 + 3'))
 	print(e.parse('2 + 3 * 4'))
 	print(e.parse('2 + (3 + 4) * 5'))
+	print(e.parse('1 + 3 * 5 / 6 + 3 - 11'))
 	# print(e.parse('2 + (3 + * 4)'))
 	# Traceback (most recent call last):
 	#    File "<stdin>", line 1, in <module>
