@@ -10,17 +10,17 @@ PORT = 21567  # same as server port.
 BUFSIZE = 10240
 ADDR = (HOST, PORT)
 
-tcp_clt_sock = socket(AF_INET, SOCK_STREAM)
-tcp_clt_sock.connect(ADDR)
+udp_clt_sock = socket(AF_INET, SOCK_DGRAM)
+udp_clt_sock.connect(ADDR)
 
 while True:
 	data = input('data >:')
 	if not data:
 		break
-	tcp_clt_sock.send(data)
-	data = tcp_clt_sock.recv(BUFSIZE)
+	udp_clt_sock.sendto(data, ADDR)
+	data, ADDR = udp_clt_sock.recvfrom(BUFSIZE)
 	if not data:
 		break
 	print(data.decode('utf-8'))
 
-tcp_clt_sock.close()
+udp_clt_sock.close()

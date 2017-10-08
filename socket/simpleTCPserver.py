@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+'''
+ run before client.
+'''
 import time
 from socket import *
 
@@ -12,7 +15,7 @@ ADDR = (HOST, PORT)
 
 tcp_ser_sock = socket(AF_INET, SOCK_STREAM)
 tcp_ser_sock.bind(ADDR)
-tcp_ser_sock.listen(5)
+tcp_ser_sock.listen(5)  # max income connection is 5.
 
 while True:
 	print('waiting for connection ...')
@@ -25,4 +28,4 @@ while True:
 		tcp_cli_sock.send('[{0}] {1}'.format(bytes(now(), 'utf-8'), data))
 	tcp_cli_sock.close()
 
-tcp_ser_sock.close()
+tcp_ser_sock.close()  # never execute.
