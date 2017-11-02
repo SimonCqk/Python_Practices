@@ -71,3 +71,17 @@ class MaxSized(Descriptor):
 		if len(value) >= self.size:
 			raise ValueError('size must be < ' + str(self.size))
 		super().__set__(instance, value)
+
+
+# 类装饰器通常性能更高，所以可以改写Unsigned和MaxSized两个类
+
+def Unsigned(cls):
+	super_set = cls.__set__
+
+	def __set__(self, instance, value):
+		if value < 0:
+			raise ValueError('Expected >= 0')
+		super_set(self, instance, value)
+
+	cls.__set__ = __set__
+	return cls
