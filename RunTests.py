@@ -1,97 +1,63 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-'''
-def log_getattribute(cls):
-	# Get the original implementation
-	# orig_getattr = cls.__getattr__
-
-	# Make a new definition
-	def new_getattribute(self, name):
-		print('getting:', name)
-		return super(cls, self).__getattribute__(name)
-
-	def new_getattr(self, name):
-		print('========getting:', name)
-		return super(cls, self).__getattr__(name)
-
-	# Attach to the class and return
-	cls.__getattribute__ = new_getattribute
-	cls.__getattr__ = new_getattr
-	return cls
+import logging
+from functools import wraps, partial
 
 
-@log_getattribute
-class Foo:
-	def __init__(self, x, y):
-		self.x = x
-		self.y = y
+# Utility decorator to attach a function as an attribute of obj
+def attach_wrapper(obj, func=None):
+    print('obj is ', obj.__name__, 'func is', func.__name__ if func is not None else func)
+    if func is None:
+        return partial(attach_wrapper, obj)
+    setattr(obj, func.__name__, func)
+    return func
 
-	def compute(self):
-		return self.x * self.y
 
-	def show(self):
-		print('show')
+def logged(level, name=None, message=None):
+    '''
+    Add logging to a function. level is the logging
+    level, name is the logger name, and message is the
+    log message. If name and message aren't specified,
+    they default to the function's module and name.
+    '''
 
-	@property
-	def X(self):
-		return self.x
+    def decorate(func):
+        logname = name if name else func.__module__
+        log = logging.getLogger(logname)
+        logmsg = message if message else func.__name__
+
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            log.log(level, logmsg)
+            return func(*args, **kwargs)
+
+        # Attach setter functions
+        @attach_wrapper(wrapper)
+        def set_level(newlevel):
+            nonlocal level
+            level = newlevel
+
+        @attach_wrapper(wrapper)
+        def set_message(newmsg):
+            nonlocal logmsg
+            logmsg = newmsg
+
+        return wrapper
+
+    return decorate
+
+
+# Example use
+@logged(logging.DEBUG)
+def add(x, y):
+    return x + y
+
+
+@logged(logging.CRITICAL, 'example')
+def spam():
+    print('Spam!')
 
 
 if __name__ == '__main__':
-	foo = Foo(1, 2)
-	foo.x
-	foo.y
-	foo.compute()
-	foo.show()
-	foo.X
-	foo.m
-'''
-
-
-def Tracer(aClass):
-	class Wrapper:
-		def __init__(self, *args, **kargs):
-			self.fetches = 0
-			self.wrapped = aClass(*args, **kargs)
-
-		def __getattr__(self, attrname):
-			print('Trace:' + attrname)
-			self.fetches += 1
-			return getattr(self.wrapped, attrname)
-
-	return Wrapper
-
-
-@Tracer
-class Spam:
-	def display(self):
-		print('Spam!' * 8)
-
-
-@Tracer
-class Person:
-	def __init__(self, name, hours, rate):
-		self.name = name
-		self.hours = hours
-		self.rate = rate
-
-	def pay(self):
-		return self.hours * self.rate
-
-
-food = Spam()
-food.display()
-print([food.fetches])
-
-bob = Person('Bob', 40, 50)
-print(bob.name)
-print(bob.pay())
-
-print('')
-sue = Person('Sue', rate=100, hours=60)
-print(sue.name)
-print(sue.pay())
-
-print(bob.name)
-print(bob.pay())
-print([bob.fetches, sue.fetches])
+    add(1, 2)
+    spam()

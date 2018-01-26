@@ -26,16 +26,17 @@ class Node:
 
 
 class NodeVisitor:
+    # this method is adapted to both generator and non-generator.
     def visit(self, node):
         stack = [node]
         last_result = None
         while stack:
             try:
                 last = stack[-1]
-                if isinstance(last, types.GeneratorType):
+                if isinstance(last, types.GeneratorType):  # move to the next step.
                     stack.append(last.send(last_result))
                     last_result = None
-                elif isinstance(last, Node):
+                elif isinstance(last, Node):  # end of visit-chain.
                     stack.append(self._visit(stack.pop()))
                 else:
                     last_result = stack.pop()
