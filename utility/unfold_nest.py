@@ -12,8 +12,13 @@ def flatten(obj, ignore_itmes=(str, bytes)):
 		else:
 			yield item
 
+flatten_lambda = lambda nested: list(filter(lambda _: _, 
+                                     (lambda _: ((yield from flatten(e)) if isinstance(e, Iterable) else (yield e) for e in _))(nested)))
 
 obj = [1, 2, [3, 4], [5, 6, [7, 8, 9]]]
 
 for i in flatten(obj):
+	print(i)
+
+for i in flatten_lambda(obj):
 	print(i)
