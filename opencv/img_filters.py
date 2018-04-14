@@ -18,7 +18,7 @@ for k in range(0, noise_count):
 	xj = int(np.random.uniform(0, new_img.shape[0]))
 	new_img[xj, xi] = 255
 
-cv2.imshow('src noised img', new_img)
+cv2.imshow('src noised sample_img', new_img)
 
 # median filter
 mfiltered_img = cv2.medianBlur(new_img, 5)

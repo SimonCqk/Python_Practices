@@ -12,6 +12,6 @@ fshift = np.fft.fftshift(ft)  # shift the zero-frequency
 shift_back = np.fft.ifftshift(fshift)  # shift back
 img_back = cv2.idft(shift_back)  # inverse fourier transform
 
-cv2.imshow('Result', np.abs(img_back))  # complex values are not allowed in the final img
+cv2.imshow('Result', np.abs(img_back))  # complex values are not allowed in the final sample_img
 cv2.waitKey(0)
 cv2.destroyAllWindows()

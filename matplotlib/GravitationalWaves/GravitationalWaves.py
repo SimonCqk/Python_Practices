@@ -43,7 +43,7 @@ pltref.set_title('Template')
 fig.tight_layout()
 
 fig.tight_layout()
-# show and save img
+# show and save sample_img
 plt.savefig("Gravitational_Waves_Original.png", dpi=500)
 plt.show()
 plt.close(fig)

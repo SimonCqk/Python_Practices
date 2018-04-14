@@ -44,22 +44,20 @@ for sample in samples:
     orig = cv2.imread(sample)
     hsv = cv2.cvtColor(orig, cv2.COLOR_BGR2HSV)
     rgb = cv2.cvtColor(orig, cv2.COLOR_BGR2RGB)
-    # 均一化: HSV: 非肤色范围的像素全部置为同一颜色(转换得(0,0,100)应是白色,
-    #              可能是opencv的问题,实际上并不是白色)
-    #         RGB: 非肤色范围的像素全部置白
+    # 均一化: HSV/RGB: 非肤色范围的像素全部置为黑色
     hsv[:, :, 0][hsv[:, :, 0] < H_min] = 0
     hsv[:, :, 0][hsv[:, :, 0] > H_max] = 0
     hsv[:, :, 1][hsv[:, :, 1] < S_min] = 0
     hsv[:, :, 1][hsv[:, :, 1] > S_max] = 0
-    hsv[:, :, 2][hsv[:, :, 2] < V_min] = 100
-    hsv[:, :, 2][hsv[:, :, 2] > V_max] = 100
+    hsv[:, :, 2][hsv[:, :, 2] < V_min] = 0
+    hsv[:, :, 2][hsv[:, :, 2] > V_max] = 0
 
-    rgb[:, :, 0][rgb[:, :, 0] < R_min] = 255
-    rgb[:, :, 0][rgb[:, :, 0] > R_max] = 255
-    rgb[:, :, 1][rgb[:, :, 1] < G_min] = 255
-    rgb[:, :, 1][rgb[:, :, 1] > G_max] = 255
-    rgb[:, :, 2][rgb[:, :, 2] < B_min] = 255
-    rgb[:, :, 2][rgb[:, :, 2] > B_max] = 255
+    rgb[:, :, 0][rgb[:, :, 0] < R_min] = 0
+    rgb[:, :, 0][rgb[:, :, 0] > R_max] = 0
+    rgb[:, :, 1][rgb[:, :, 1] < G_min] = 0
+    rgb[:, :, 1][rgb[:, :, 1] > G_max] = 0
+    rgb[:, :, 2][rgb[:, :, 2] < B_min] = 0
+    rgb[:, :, 2][rgb[:, :, 2] > B_max] = 0
     _, subs = plt.subplots(1, 3)
     subs[0].imshow(orig)
     subs[0].set_title('Origin')

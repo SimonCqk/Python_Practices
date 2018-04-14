@@ -1,0 +1,19 @@
+img=imread('TEST.tif');
+histed=histeq(img); % 直方图均衡化
+imhist(img);imhist(histed); % 显示均衡化前后的直方图
+adjusted=imadjust(histed); % 灰度变换
+imshow(adjusted);
+% 分别对图像均值滤波和中值滤波
+filtered=filter2(fspecial('average',3),adjusted)/255;
+filtered=medfilt2(filtered,[3,3]);
+bin=im2bw(filtered,0.5);  % 对图像进行二值化
+imshow(bin);
+>> se=strel('disk',3);
+>> new_img=imdilate(bin,se);
+>> imshow(new_img);
+>> filled=imfill(new_img,'holes');
+>> imshow(filled);
+>> final=filled-new_img;imshow(final);
+>> imshow(final);
+>> final=imdilate(final,se);imshow(final);
+>> final=imdilate(final,se);imshow(final);
