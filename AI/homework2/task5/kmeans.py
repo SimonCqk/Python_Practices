@@ -7,19 +7,21 @@ samples = []
 
 
 def get_pixel(img):
+    """从原图中提取所有像素"""
     b, g, r = cv2.split(img)
     return [(_r, _g, _b) for (er, eg, eb) in zip(r, g, b)
             for (_r, _g, _b) in zip(er, eg, eb)]
 
 
 def load_data(filename):
+    """加载图像并提取信息"""
     img = cv2.imread(filename)
     samples.extend(get_pixel(img))
     return img, np.mat(samples)
 
 
 def init_centroids(data: np.matrix, k=2):
-    # 随机初始化中心点
+    """随机初始化中心点"""
     sample_num, dim = data.shape
     centroids = np.zeros((k, dim))
     for i in range(k):
@@ -29,7 +31,7 @@ def init_centroids(data: np.matrix, k=2):
 
 
 def k_means(data, k=2):
-    # k means算法的主要实现部分
+    """k means算法的主要实现部分"""
     sample_num = data.shape[0]
     # 第一列存储属于的聚类，第二列存储此列样本和中心点的误差
     clusters = np.zeros((sample_num, 2))
@@ -59,6 +61,7 @@ def k_means(data, k=2):
 
 
 def main():
+    """对图像各个像素进行分类并处理，把不属于河流的像素强制置白"""
     img, data = load_data('IMGP8080.jpg')
 
     centroids, clusters = k_means(data)

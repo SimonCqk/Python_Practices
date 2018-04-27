@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1883b5f6-2a5c-47d4-9d62-d31c1389ca54" name="Default" comment="add new homework solutions.">
-      <change afterPath="$PROJECT_DIR$/async_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSN/task3/leach.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_5/max_likely.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/task_5/bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_6/nonparametric.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/task_6/bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CV/task1/color.py" beforeDir="false" afterPath="$PROJECT_DIR$/CV/task1/color.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/async-await.py" beforeDir="false" afterPath="$PROJECT_DIR$/async-await.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/homework2/task4/fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/homework2/task4/fisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_5/bayes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_5/iris.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_5/iris.names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_6/bayes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_6/wine.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/task_6/wine.names" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,13 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fisher.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AI/homework2/task4/fisher.py">
+      <file leaf-file-name="leach.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state relative-caret-position="18">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/simple_craws/JD_Goodinfo.py" />
         <option value="$PROJECT_DIR$/__queue.py" />
         <option value="$PROJECT_DIR$/about_math/image_convolution.py" />
         <option value="$PROJECT_DIR$/about_math/numpy_.py" />
@@ -102,6 +106,7 @@
         <option value="$PROJECT_DIR$/AI/homework2/task4/test.py" />
         <option value="$PROJECT_DIR$/AI/homework2/task4/fisher.py" />
         <option value="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" />
+        <option value="$PROJECT_DIR$/WSN/task3/leach.py" />
       </list>
     </option>
   </component>
@@ -129,20 +134,13 @@
             <path>
               <item name="Python_Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python_Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
+              <item name="WSN" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python_Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python_Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
-              <item name="homework2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python_Practices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python_Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="AI" type="462c0819:PsiDirectoryNode" />
-              <item name="homework2" type="462c0819:PsiDirectoryNode" />
-              <item name="task5" type="462c0819:PsiDirectoryNode" />
+              <item name="WSN" type="462c0819:PsiDirectoryNode" />
+              <item name="task3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,7 +150,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Pycharm-Projects/Python_Practices/.gitignore&#10;sorted&#9;null&#9;null&#10;iml&#9;FILE&#9;file://E:/Pycharm-Projects/Python_Practices/.idea/Python_Practices.iml" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Program Files (x86)/Python36-32/Lib/random.py&#10;sorted&#9;null&#9;null&#10;iml&#9;FILE&#9;file://E:/Pycharm-Projects/Python_Practices/.idea/Python_Practices.iml" />
     <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="E:/Qt_Projects/Model_of_LightTransport" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -181,25 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kmeans">
-    <configuration name="CV_exp1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python_Practices" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CV/exp1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CV/exp1/exp1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.leach">
     <configuration name="RunTests" type="PythonConfigurationType" factoryName="Python">
       <module name="Python_Practices" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +247,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="leach" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python_Practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WSN/task3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WSN/task3/leach.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,18 +353,18 @@
     <list>
       <item itemvalue="Python.RunTests" />
       <item itemvalue="Python.exp2" />
-      <item itemvalue="Python.CV_exp1" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.fisher" />
       <item itemvalue="Python.kmeans" />
+      <item itemvalue="Python.leach" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.leach" />
         <item itemvalue="Python.kmeans" />
         <item itemvalue="Python.fisher" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.exp2" />
-        <item itemvalue="Python.CV_exp1" />
       </list>
     </recent_temporary>
   </component>
@@ -652,9 +650,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4935484" visible="true" weight="0.13541667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935484" visible="true" weight="0.13541667" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32792208" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5089286" side_tool="true" weight="0.26547232" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32956383" />
@@ -665,12 +662,12 @@
       <window_info id="Favorites" order="2" sideWeight="0.5064516" side_tool="true" weight="0.18986385" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
@@ -739,21 +736,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AI/homework2/task4/fisher.py">
+    <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="270">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/网球妹子嘟嘟小嘴脸蛋清秀身材完美/6.jpg" />
-    <entry file="file://$PROJECT_DIR$/DirtyCar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -909,27 +898,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_5/bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_5/iris.names">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="57" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_5/iris.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AI/task_5/bayes.py" />
+    <entry file="file://$PROJECT_DIR$/AI/task_5/iris.names" />
+    <entry file="file://$PROJECT_DIR$/AI/task_5/iris.data" />
     <entry file="file://$PROJECT_DIR$/CV/task1/color.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -937,27 +908,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_6/wine.names">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_6/bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AI/task_6/wine.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="155" column="7" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AI/task_6/wine.names" />
+    <entry file="file://$PROJECT_DIR$/AI/task_6/bayes.py" />
+    <entry file="file://$PROJECT_DIR$/AI/task_6/wine.data" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1402888915/cv2/cv2/VideoCapture.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1016,26 +969,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AI/homework2/task4/test.py" />
-    <entry file="file://$PROJECT_DIR$/AI/task_5/bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AI/task_5/bayes.py" />
     <entry file="file://$PROJECT_DIR$/AI/homework2/task5/kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+        <state relative-caret-position="90">
+          <caret line="5" column="12" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AI/homework2/task4/fisher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        <state relative-caret-position="384">
+          <caret line="73" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1402888915/_random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="743" column="18" lean-forward="true" selection-start-line="743" selection-start-column="18" selection-end-line="743" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WSN/task3/WSN实验报告3代码.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

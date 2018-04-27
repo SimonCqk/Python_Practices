@@ -8,12 +8,14 @@ samples['others'] = []
 
 
 def get_pixel(img):
+    """从原图中提取所有像素"""
     b, g, r = cv2.split(img)
     return [(_r, _g, _b) for (er, eg, eb) in zip(r, g, b)
             for (_r, _g, _b) in zip(er, eg, eb)]
 
 
 def load_data(filename, label):
+    """加载图像并提取信息"""
     img = cv2.imread(filename)
     samples[label].extend(get_pixel(img))
 
@@ -60,6 +62,7 @@ def fisher_classify(sample_img, sample_mean, sample_cov):
 
 
 def main():
+    """对图像各个像素进行分类并处理，把不属于河流的像素强制置白"""
     load_data('river.jpg', 'river')
     load_data('other.jpg', 'others')
     image = cv2.imread('IMGP8080.jpg')
