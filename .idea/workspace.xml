@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1883b5f6-2a5c-47d4-9d62-d31c1389ca54" name="Default" comment="add new homework solutions.">
-      <change afterPath="$PROJECT_DIR$/WSN/task3/leach.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CV/exp2/split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/homework2/task4/fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/homework2/task4/fisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_5/bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_5/iris.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_5/iris.names" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_6/bayes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_6/wine.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI/task_6/wine.names" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,13 +14,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="leach.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
+      <file leaf-file-name="split.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CV/exp2/split.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="54">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="27" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/__queue.py" />
         <option value="$PROJECT_DIR$/about_math/image_convolution.py" />
         <option value="$PROJECT_DIR$/about_math/numpy_.py" />
         <option value="$PROJECT_DIR$/about_math/median_filter.py" />
@@ -107,6 +97,7 @@
         <option value="$PROJECT_DIR$/AI/homework2/task4/fisher.py" />
         <option value="$PROJECT_DIR$/AI/homework2/task5/kmeans.py" />
         <option value="$PROJECT_DIR$/WSN/task3/leach.py" />
+        <option value="$PROJECT_DIR$/CV/exp2/split.py" />
       </list>
     </option>
   </component>
@@ -134,13 +125,13 @@
             <path>
               <item name="Python_Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python_Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="WSN" type="462c0819:PsiDirectoryNode" />
+              <item name="CV" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python_Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python_Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="WSN" type="462c0819:PsiDirectoryNode" />
-              <item name="task3" type="462c0819:PsiDirectoryNode" />
+              <item name="CV" type="462c0819:PsiDirectoryNode" />
+              <item name="exp2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.leach">
+  <component name="RunManager" selected="Python.split">
     <configuration name="RunTests" type="PythonConfigurationType" factoryName="Python">
       <module name="Python_Practices" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,24 +184,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RunTests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="exp2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python_Practices" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WSN/task2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WSN/task2/exp2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -265,6 +238,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WSN/task3/leach.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="split" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python_Practices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CV/exp2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CV/exp2/split.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -352,19 +343,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.RunTests" />
-      <item itemvalue="Python.exp2" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.fisher" />
       <item itemvalue="Python.kmeans" />
       <item itemvalue="Python.leach" />
+      <item itemvalue="Python.split" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.split" />
         <item itemvalue="Python.leach" />
         <item itemvalue="Python.kmeans" />
         <item itemvalue="Python.fisher" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.exp2" />
       </list>
     </recent_temporary>
   </component>
@@ -650,25 +641,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935484" visible="true" weight="0.13541667" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32792208" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5089286" side_tool="true" weight="0.26547232" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49107143" weight="0.26547232" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32956383" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32736155" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49107143" weight="0.26547232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32792208" />
-      <window_info id="Favorites" order="2" sideWeight="0.5064516" side_tool="true" weight="0.18986385" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info id="Favorites" order="2" sideWeight="0.5064516" side_tool="true" weight="0.18986385" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -736,16 +728,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/socket/simpleUDPserver.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1007,10 +989,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WSN/task3/leach.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="486">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CV/exp2/split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
